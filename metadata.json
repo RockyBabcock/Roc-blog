@@ -1,0 +1,8 @@
+{
+  "name": "Rocky Journal",
+  "description": "A Stellar-inspired independent reading blog powered by Markdown and GitHub content repositories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

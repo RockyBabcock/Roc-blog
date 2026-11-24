@@ -1,0 +1,83 @@
+:root {
+  --bg-page: #F5F2EA;
+  --bg-surface: #FCFAF5;
+  --bg-subtle: #ECE7DC;
+  --bg-hover: #E7E1D4;
+  --bg-code: #F0ECE2;
+
+  --text-primary: #25241F;
+  --text-secondary: #656158;
+  --text-muted: #847F74;
+
+  --border-hairline: #DCD7CD;
+  --border-strong: #C9C2B4;
+
+  --accent: #925A43;
+  --accent-hover: #7A4834;
+  --accent-soft: rgba(146, 90, 67, 0.1);
+  --accent-ring: rgba(146, 90, 67, 0.35);
+
+  --callout-note-bg: #F3EFE6;
+  --callout-note-border: #D4CDC0;
+  --callout-note-ink: #4A463D;
+
+  --callout-tip-bg: #EEF2EB;
+  --callout-tip-border: #C5D1BE;
+  --callout-tip-ink: #2F4F36;
+
+  --callout-warning-bg: #F6ECE6;
+  --callout-warning-border: #DEC2B4;
+  --callout-warning-ink: #7F3D24;
+
+  --shadow-subtle: 0 1px 2px rgba(37, 36, 31, 0.04);
+  --shadow-elevated: 0 12px 32px -8px rgba(37, 36, 31, 0.12), 0 2px 6px rgba(37, 36, 31, 0.05);
+
+  --font-serif: 'Newsreader', 'Noto Serif SC', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-micro: 180ms;
+  --duration-dialog: 240ms;
+  --duration-page: 300ms;
+  --duration-reveal: 420ms;
+}
+
+.dark {
+  --bg-page: #171614;
+  --bg-surface: #201E1B;
+  --bg-subtle: #292622;
+  --bg-hover: #322E29;
+  --bg-code: #1B1916;
+
+  --text-primary: #EAE5DA;
+  --text-secondary: #A9A295;
+  --text-muted: #7F796E;
+
+  --border-hairline: #33302B;
+  --border-strong: #46423B;
+
+  --accent: #C98A6E;
+  --accent-hover: #DDA186;
+  --accent-soft: rgba(201, 138, 110, 0.14);
+  --accent-ring: rgba(201, 138, 110, 0.4);
+
+  --callout-note-bg: #23211E;
+  --callout-note-border: #3A3630;
+  --callout-note-ink: #D8D1C4;
+
+  --callout-tip-bg: #1D251F;
+  --callout-tip-border: #324436;
+  --callout-tip-ink: #A3C9AA;
+
+  --callout-warning-bg: #2A1F1B;
+  --callout-warning-border: #4F352A;
+  --callout-warning-ink: #E2A388;
+
+  --shadow-subtle: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-elevated: 0 16px 40px -8px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.35);
+}

@@ -1,0 +1,52 @@
+html,
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+/* Stellar-inspired balanced three-column blog shell */
+.stellar-shell {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Subtle quiet scrollbars for sidebars and code blocks */
+.quiet-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-hairline) transparent;
+}
+
+.quiet-scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.quiet-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.quiet-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--border-hairline);
+  border-radius: 999px;
+}
+
+/* Hide horizontal scrollbar on mobile category rails while preserving touch scroll */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

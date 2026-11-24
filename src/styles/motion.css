@@ -1,0 +1,73 @@
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dialogEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes backdropFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-page-enter {
+  animation: pageEnter var(--duration-page) var(--ease-out-expo) both;
+}
+
+.animate-dialog-enter {
+  animation: dialogEnter var(--duration-dialog) var(--ease-out-expo) both;
+}
+
+.animate-backdrop-fade {
+  animation: backdropFade var(--duration-micro) ease-out both;
+}
+
+.reveal-section {
+  transition: opacity var(--duration-reveal) var(--ease-out-expo),
+    transform var(--duration-reveal) var(--ease-out-expo);
+}
+
+.reveal-section[data-revealed='false'] {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.reveal-section[data-revealed='true'] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal-section[data-revealed='false'] {
+    opacity: 1;
+    transform: none;
+  }
+}

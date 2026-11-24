@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@import "katex/dist/katex.min.css";
+@import "./styles/tokens.css";
+@import "./styles/layout.css";
+@import "./styles/typography.css";
+@import "./styles/motion.css";
